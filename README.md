@@ -1,3 +1,5 @@
+Imported from https://github.com/SwerveDriveSpecialties/swerve-template on 5-Apr-2022.
+
 ### Configuring the code for your robot
 
 1. Set your team number.
