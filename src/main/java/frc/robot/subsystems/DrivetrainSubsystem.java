@@ -99,8 +99,8 @@ public class DrivetrainSubsystem extends SubsystemBase {
 
     // By default we will use Falcon 500s in standard configuration. But if you use a different configuration or motors
     // you MUST change it. If you do not, your code will crash on startup.
-    // FIXME Setup motor configuration
-    m_frontLeftModule = Mk3SwerveModuleHelper.createFalcon500(
+    // FIXED Setup motor configuration
+    m_frontLeftModule = Mk3SwerveModuleHelper.createNeo(
             // This parameter is optional, but will allow you to see the current state of the module on the dashboard.
             tab.getLayout("Front Left Module", BuiltInLayouts.kList)
                     .withSize(2, 4)
@@ -118,7 +118,7 @@ public class DrivetrainSubsystem extends SubsystemBase {
     );
 
     // We will do the same for the other modules
-    m_frontRightModule = Mk3SwerveModuleHelper.createFalcon500(
+    m_frontRightModule = Mk3SwerveModuleHelper.createNeo(
             tab.getLayout("Front Right Module", BuiltInLayouts.kList)
                     .withSize(2, 4)
                     .withPosition(2, 0),
@@ -129,7 +129,7 @@ public class DrivetrainSubsystem extends SubsystemBase {
             FRONT_RIGHT_MODULE_STEER_OFFSET
     );
 
-    m_backLeftModule = Mk3SwerveModuleHelper.createFalcon500(
+    m_backLeftModule = Mk3SwerveModuleHelper.createNeo(
             tab.getLayout("Back Left Module", BuiltInLayouts.kList)
                     .withSize(2, 4)
                     .withPosition(4, 0),
@@ -140,7 +140,7 @@ public class DrivetrainSubsystem extends SubsystemBase {
             BACK_LEFT_MODULE_STEER_OFFSET
     );
 
-    m_backRightModule = Mk3SwerveModuleHelper.createFalcon500(
+    m_backRightModule = Mk3SwerveModuleHelper.createNeo(
             tab.getLayout("Back Right Module", BuiltInLayouts.kList)
                     .withSize(2, 4)
                     .withPosition(6, 0),
