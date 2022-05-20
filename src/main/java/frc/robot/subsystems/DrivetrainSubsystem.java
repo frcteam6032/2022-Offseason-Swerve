@@ -99,6 +99,7 @@ public class DrivetrainSubsystem extends SubsystemBase {
 
     // By default we will use Falcon 500s in standard configuration. But if you use a different configuration or motors
     // you MUST change it. If you do not, your code will crash on startup.
+
     // FIXED Setup motor configuration
     m_frontLeftModule = Mk4SwerveModuleHelper.createNeo(
             // This parameter is optional, but will allow you to see the current state of the module on the dashboard.
@@ -109,7 +110,7 @@ public class DrivetrainSubsystem extends SubsystemBase {
             Mk4SwerveModuleHelper.GearRatio.L2,
             // This is the ID of the drive motor
             FRONT_LEFT_MODULE_DRIVE_MOTOR,
-            // This is the ID of the steer motor
+            // This is the ID of the steer motor (steer = rotate wheel)
             FRONT_LEFT_MODULE_STEER_MOTOR,
             // This is the ID of the steer encoder
             FRONT_LEFT_MODULE_STEER_ENCODER,
