@@ -157,18 +157,18 @@ public class DrivetrainSubsystem extends SubsystemBase {
    * 'forwards' direction.
    */
   public void zeroGyroscope() {
-    // FIXME Remove if you are using a Pigeon
+    // FIXED Remove if you are using a Pigeon
     m_pigeon.setFusedHeading(0.0);
 
-    // FIXME Uncomment if you are using a NavX
+    // FIXED Uncomment if you are using a NavX
 //    m_navx.zeroYaw();
   }
 
   public Rotation2d getGyroscopeRotation() {
-    // FIXME Remove if you are using a Pigeon
+    // FIXED Remove if you are using a Pigeon
     return Rotation2d.fromDegrees(m_pigeon.getFusedHeading());
 
-    // FIXME Uncomment if you are using a NavX
+    // FIXED Uncomment if you are using a NavX
 //    if (m_navx.isMagnetometerCalibrated()) {
 //      // We will only get valid fused headings if the magnetometer is calibrated
 //      return Rotation2d.fromDegrees(m_navx.getFusedHeading());
