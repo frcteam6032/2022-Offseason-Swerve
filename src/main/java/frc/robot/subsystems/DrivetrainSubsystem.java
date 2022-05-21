@@ -107,9 +107,9 @@ public class DrivetrainSubsystem extends SubsystemBase {
                     .withPosition(0, 0),
             // This can either be STANDARD or FAST depending on your gear configuration
             Mk4SwerveModuleHelper.GearRatio.L2,
-            // This is the ID of the drive motor
+            // This is the ID of the drive motor (drive = turn wheel)
             FRONT_LEFT_MODULE_DRIVE_MOTOR,
-            // This is the ID of the steer motor
+            // This is the ID of the steer motor (steer = rotate wheel)
             FRONT_LEFT_MODULE_STEER_MOTOR,
             // This is the ID of the steer encoder
             FRONT_LEFT_MODULE_STEER_ENCODER,
